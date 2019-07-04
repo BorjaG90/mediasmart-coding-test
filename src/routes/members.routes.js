@@ -15,20 +15,19 @@ router.get('/', (req, res) => {
       page_size: '5'
     }
   })
-  .then(function(response) {
-    console.log('response =', response);
-    return response.json();
-  })
+  //.then(function(response) {
+    //console.log('response =', response);
+    //return response.json();
+  //})
   .then(function(data) {
     console.log('data = ', data);
+    res.json({
+      status: data.data
+    });
   })
   .catch(function(err) {
     console.error(err);
-  });
-
-  res.json({
-    status: "API works"
-  });
+  })
 });
 
 module.exports = router;
