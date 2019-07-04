@@ -20,7 +20,8 @@
   "homepage": "https://gitlab.com/BorjaG90/mediasmart-coding-test#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "nodemon": "^1.19.1"
