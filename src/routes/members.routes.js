@@ -21,13 +21,11 @@ router.get('/', (req, res) => {
   //})
   .then(function(data) {
     console.log('data = ', data);
-    res.json({
-      status: data.data
-    });
+    res.json(data.data);
   })
   .catch(function(err) {
     console.error(err);
-  })
+  });
 });
 
 module.exports = router;
