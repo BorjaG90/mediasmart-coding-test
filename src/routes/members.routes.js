@@ -11,11 +11,11 @@ router.get('/', (req, res) => {
     },
     params: {
       page: '1',
-      page_size: '5'
+      page_size: '6'
     }
   })
   .then(function(data) {
-    console.log('data = ', data);
+    //console.log('data = ', data);
     res.json(data.data);
   })
   .catch(function(err) {

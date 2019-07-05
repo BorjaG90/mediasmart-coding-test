@@ -12,7 +12,7 @@ app.use(morgan('dev'));
 app.use(express.json());
 
 // Routes 
-app.use(require('./routes/members.routes'));
+app.use('/api/members', require('./routes/members.routes'));
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
