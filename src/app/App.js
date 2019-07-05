@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Members from '../components/Members';
 
 class App extends Component{
 
@@ -33,25 +34,9 @@ class App extends Component{
             </nav>
           </header>
           <div className="row">
-            {
-              this.state.members.map(member => {
-                return (
-                  <div className="col-md-4" key={member.id}>
-                    <div className="card text-center">
-                      <div className="card-body">
-                        <span>
-                          <img className="img-thumbnail" src={member.image}></img>
-                          {member.name}
-                        </span>
-                        <br/>
-                        <span>{member.age} years old</span>
-                      </div>
-                    </div>
-                  </div>
-                )
-              })
-            }
-            
+            <Members 
+              members={this.state.members}
+            />
           </div>
         </div>
       </div>
