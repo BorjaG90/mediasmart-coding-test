@@ -1,5 +1,4 @@
 const express = require('express');
-const fetch = require("node-fetch");
 const axios = require('axios');
 
 const router = express.Router();
@@ -15,10 +14,6 @@ router.get('/', (req, res) => {
       page_size: '5'
     }
   })
-  //.then(function(response) {
-    //console.log('response =', response);
-    //return response.json();
-  //})
   .then(function(data) {
     console.log('data = ', data);
     res.json(data.data);
