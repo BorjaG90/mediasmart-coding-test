@@ -6,20 +6,27 @@ class App extends Component{
   constructor() {
     super();
     this.state = {
-      members: []
-    }
+      members: [],
+      page: 0,
+      page_size: 10
+    };
   }
 
   componentDidMount() {
-    this.fetchMembers();
+    this.fetchMembers(this.state.page, this.state.page_size);
   }
 
-  fetchMembers() {
-    fetch('/api/members')
+  fetchMembers(page, pagesize) {
+    console.log("page: " + page);
+    fetch('/api/members/?page=' + page + '&page_size=' + pagesize)
       .then(res => res.json())
       .then(data => {
-        //console.log(data);
-        this.setState({members: data});
+        console.log(data);
+        this.setState({
+          members: [...this.state.members, ...data],
+          page: page + 1
+        });
+        console.log(this.members)
       });
   }
 
