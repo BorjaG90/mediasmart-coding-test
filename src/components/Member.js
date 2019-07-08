@@ -9,7 +9,7 @@ class Member extends Component {
       <div className="card text-center">
         <div className="card-body">
           <span>
-            <img className="img-thumbnail" src={member.image}></img>
+            <img className="img-thumbnail photo-img" src={member.image}></img>
             {member.name}
           </span>
           <br/>

@@ -14,13 +14,8 @@ router.get('/', (req, res) => {
       page_size
     }
   })
-  .then(function(data) {
-    //console.log('data = ', data);
-    res.json(data.data);
-  })
-  .catch(function(err) {
-    console.error(err);
-  });
+  .then(data => res.json(data.data))
+  .catch(err => console.error(err));
 });
 
 module.exports = router;
