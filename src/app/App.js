@@ -29,7 +29,10 @@ class App extends Component{
         <div className="container">
           <header>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-              <a className="navbar-brand" href="work.mediasmart.io">MS</a>
+              <a className="navbar-brand" href="work.mediasmart.io">
+                <img src="https://www.mediasmart.io/assets/images/logo-mediasmart.png"
+                  alt="MediaSmart Logo" className="logo-img"/>
+                </a>
               <h3 className="">MediaSmart Members</h3>
             </nav>
           </header>
