@@ -66,11 +66,11 @@ class App extends Component{
 
         <header>
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a className="navbar-brand" href="work.mediasmart.io">
+            <a className="navbar-brand" href="http://www.mediasmart.io">
               <img src="https://www.mediasmart.io/assets/images/logo-mediasmart.png"
                 alt="MediaSmart Logo" className="logo-img"/>
               </a>
-            <h3 className="">MediaSmart Members</h3>
+            <h1>MediaSmart Members</h1>
           </nav>
         </header>
 

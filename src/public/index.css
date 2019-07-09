@@ -1,3 +1,9 @@
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
 .logo-img {
   height: 8.8rem;
   margin: 0;
@@ -24,9 +30,9 @@
   left: -10%;
 }
 
-.profile-photo {
-  height: 50%;
-  background-color: green;
+.profile-photo img {
+  height: 100%;
+  width: 100%;
 }
 
 .profile-bio {
