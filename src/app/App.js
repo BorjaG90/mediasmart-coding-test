@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Members from '../components/Members';
+import Nav from '../components/Nav';
 
 class App extends Component{
 
@@ -17,7 +18,6 @@ class App extends Component{
 
   componentDidMount() {
     this.fetchMembers(this.state.page, this.state.page_size);
-    //document.getElementById('container').addEventListener("scroll", this.handleScroll.bind(this));
   }
 
   fetchMembers(page, pagesize) {
@@ -36,7 +36,6 @@ class App extends Component{
   }
 
   handleClickForward(e) {
-    debugger
     this.fetchMembers(this.state.page +1, this.state.page_size);
   }
 
@@ -51,17 +50,6 @@ class App extends Component{
   }*/
 
   render () {
-    let button;
-    let actual_page = this.state.page + 1;
-    let size = this.state.page_size;
-    if (actual_page > 1){
-      button = <button 
-        className="btn btn-danger btn-block" 
-        onClick={this.handleClickBack}
-        >
-        Back
-      </button>
-    }
     return(
       <div className="container" id="container">
         <header>
@@ -73,16 +61,14 @@ class App extends Component{
             <h3 className="">MediaSmart Members</h3>
           </nav>
         </header>
-        <span>
-          {button}
-          {actual_page}
-          <button 
-            className="btn btn-primary btn-block" 
-            onClick={this.handleClickForward}
-            >
-            Forward
-          </button>
-        </span>
+
+        <Nav
+          size={this.state.page_size}
+          actual_page={this.state.page + 1}
+          handleClickForward={this.handleClickForward}
+          handleClickBack={this.handleClickBack}
+        />
+        
         <div className="row">
           <Members 
             members={this.state.members}
