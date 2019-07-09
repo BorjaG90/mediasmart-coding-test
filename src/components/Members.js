@@ -9,6 +9,7 @@ class Members extends Component {
       <Member
         member={member}
         key={member.id}
+        paintProfile={this.props.paintProfile}
       />
     )
   }

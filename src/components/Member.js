@@ -5,11 +5,13 @@ class Member extends Component {
   render() {
     const { member } = this.props;
 
-    return <div className="col-md-4" key={member.id}>
+    return <div className="col-md-4" 
+        key={member.id} 
+        onClick={this.props.paintProfile.bind(this, member)}>
       <div className="card text-center">
         <div className="card-body">
           <span>
-            <img className="photo-img" src={member.image}></img>
+            <img className="photo-img" src={member.image} alt={member.id} />
             {member.name}
           </span>
           <br/>

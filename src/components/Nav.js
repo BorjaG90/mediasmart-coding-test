@@ -13,21 +13,30 @@ class Nav extends Component {
 
     return (
       <div className="row">
+
         <div className="col-md-2">
           {button}
         </div>
+
         <div className="col-md-8 text-center">
           {this.props.actual_page}
         </div>
+
         <div className="col-md-2">
           <button 
             className="btn btn-primary btn-block" 
             onClick={this.props.handleClickForward}
           >Forward</button>
         </div>
+        
       </div>
     )
   }
+}
+
+// Validation
+Nav.propTypes = {
+  actual_page: PropTypes.number.isRequired
 }
 
 export default Nav
