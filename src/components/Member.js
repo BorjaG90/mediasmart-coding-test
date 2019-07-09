@@ -12,7 +12,7 @@ class Member extends Component {
         <div className="card-body">
           <span>
             <img className="photo-img" src={member.image} alt={member.id} />
-            {member.name}
+            <b>{member.name}</b>
           </span>
           <br/>
           <span>{member.age} years old</span>

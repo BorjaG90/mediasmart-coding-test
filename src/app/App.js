@@ -63,7 +63,9 @@ class App extends Component{
   render () {
     return(
       <div className="container" id="container">
-
+        <div id="dark" hidden={!this.state.profile_show}>
+          
+        </div>
         <header>
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <a className="navbar-brand" href="http://www.mediasmart.io">

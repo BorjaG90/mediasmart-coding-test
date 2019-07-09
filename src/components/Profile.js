@@ -14,14 +14,14 @@ class Profile extends Component {
           </div>
 
           <div className="profile-data col-md-7">
-            <p>{profile.name}</p>
-            <p>{profile.age}</p>
+            <p><b>Name:</b> {profile.name}</p>
+            <p><b>Age:</b> {profile.age}</p>
           </div>
 
         </div>
 
         <div className="row profile-bio">
-          <p>{profile.bio}</p>
+          <p><b>Bio:</b> {profile.bio}</p>
         </div>
 
       </div>
