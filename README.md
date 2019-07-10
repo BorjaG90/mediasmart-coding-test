@@ -22,6 +22,8 @@ npm install
 
 ### Frontend
 <a href="https://es.reactjs.org/"><img src="https://raw.githubusercontent.com/BorjaG90/media/master/img/logos/reactJs.png" width=50 alt="ReactJS"></a>
+<a href="https://getbootstrap.com/"><img src="https://raw.githubusercontent.com/BorjaG90/media/master/img/logos/bootstrap.png" width=50 alt="Bootstrap"></a>
+<a href="https://fontawesome.com/"><img src="https://raw.githubusercontent.com/BorjaG90/media/master/img/logos/font_awesome.png" width=50 alt="Font-Awesome"></a>
 
 ### Platforms
 <a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/BorjaG90/media/master/img/logos/vscode.png" width=50 alt="VSCode"></a>
