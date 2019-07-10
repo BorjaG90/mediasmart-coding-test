@@ -6,25 +6,29 @@ class Nav extends Component {
     let button;
     if (this.props.actual_page > 1){
       button = <button 
-        className="btn btn-danger btn-block" 
+        className="btn btn-danger btn-block shadow" 
         onClick={this.props.handleClickBack}
+      >Back</button>
+    } else {
+      button = <button 
+        className="btn btn-outline-danger btn-block"
       >Back</button>
     }
 
     return (
-      <div className="row">
+      <div className="row" id="nav">
 
         <div className="col-md-2">
           {button}
         </div>
 
-        <div className="col-md-8 text-center">
+        <div className="col-md-8 text-center nav-actualpage">
           {this.props.actual_page}
         </div>
 
         <div className="col-md-2">
           <button 
-            className="btn btn-primary btn-block" 
+            className="btn btn-danger btn-block shadow" 
             onClick={this.props.handleClickForward}
           >Forward</button>
         </div>

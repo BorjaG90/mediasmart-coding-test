@@ -8,14 +8,18 @@ class Member extends Component {
     return <div className="col-md-4" 
         key={member.id} 
         onClick={this.props.paintProfile.bind(this, member)}>
-      <div className="card text-center">
-        <div className="card-body">
-          <span>
+      <div className="card text-center shadow-lg">
+        <div className="card-body member-card">
+
+          <div className="member-data">
+            <div className="member-name"><b>{member.name}</b></div>
+            <div className="member-age">{member.age} years old</div>
+          </div>
+
+          <div className="member-img">
             <img className="photo-img" src={member.image} alt={member.id} />
-            <b>{member.name}</b>
-          </span>
-          <br/>
-          <span>{member.age} years old</span>
+          </div>
+          
         </div>
       </div>
     </div>

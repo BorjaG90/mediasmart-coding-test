@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Members from '../components/Members';
 import Nav from '../components/Nav';
 import Profile from '../components/Profile';
-import { throws } from 'assert';
+import Header from '../components/Header';
 
 class App extends Component{
 
@@ -52,6 +52,7 @@ class App extends Component{
       profile,
       profile_show: true
     })
+    window.scrollTo(0, 0);
   }
 
   hideProfile(){
@@ -63,24 +64,18 @@ class App extends Component{
   render () {
     return(
       <div className="container" id="container">
-        <div id="dark" hidden={!this.state.profile_show}>
-          
-        </div>
-        <header>
-          <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a className="navbar-brand" href="http://www.mediasmart.io">
-              <img src="https://www.mediasmart.io/assets/images/logo-mediasmart.png"
-                alt="MediaSmart Logo" className="logo-img"/>
-              </a>
-            <h1>MediaSmart Members</h1>
-          </nav>
-        </header>
-
         <Profile 
           profile={this.state.profile}
           profile_show={this.state.profile_show}
           hideProfile={this.hideProfile}
         />
+
+        <div id="dark" 
+          hidden={!this.state.profile_show} 
+          onClick={this.hideProfile}>
+        </div>
+
+        <Header/>
 
         <Nav
           actual_page={this.state.page + 1}
@@ -94,6 +89,12 @@ class App extends Component{
             paintProfile={this.paintProfile}
           />
         </div>
+
+        <Nav
+          actual_page={this.state.page + 1}
+          handleClickForward={this.handleClickForward}
+          handleClickBack={this.handleClickBack}
+        />
 
       </div> // container
     )

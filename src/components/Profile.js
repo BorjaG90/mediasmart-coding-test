@@ -5,23 +5,27 @@ class Profile extends Component {
   render() {
     const { profile, profile_show } = this.props;
     return (
-      <div className="" id="profile" 
-        hidden={!profile_show} onClick={this.props.hideProfile}>
+      <div className="shadow-lg" id="profile" 
+        hidden={!profile_show}>
         <div className="row">
+
+          <div className="profile-data col-md-7 text-center">
+            <h2><b>Name:</b> {profile.name}</h2>
+            <br/>
+            <h3><b>Age:</b> {profile.age}</h3>
+          </div>
 
           <div className="profile-photo col-md-5">
             <img src={profile.image} alt={profile.id} />
           </div>
-
-          <div className="profile-data col-md-7">
-            <p><b>Name:</b> {profile.name}</p>
-            <p><b>Age:</b> {profile.age}</p>
-          </div>
-
+          
         </div>
 
         <div className="row profile-bio">
-          <p><b>Bio:</b> {profile.bio}</p>
+        <b>Bio:</b><textarea rows="5" readOnly value={profile.bio}></textarea>
+        </div>
+        <div className="row profile-close">
+          <button className="btn btn-danger btn-block" onClick={this.props.hideProfile}>Close</button>
         </div>
 
       </div>
