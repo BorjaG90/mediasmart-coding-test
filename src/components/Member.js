@@ -12,8 +12,8 @@ class Member extends Component {
         <div className="card-body member-card">
 
           <div className="member-data">
-            <div className="member-name"><b>{member.name}</b></div>
-            <div className="member-age">{member.age} years old</div>
+            <div className="member-name shadow"><b>{member.name}</b></div>
+            <div className="member-age shadow">{member.age} years old</div>
           </div>
 
           <div className="member-img">

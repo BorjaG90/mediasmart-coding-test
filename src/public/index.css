@@ -120,3 +120,7 @@ h2, h3 {
 div.member-card:hover div.member-data {
   display: block;
 }
+
+.page-footer {
+  color: azure;
+}

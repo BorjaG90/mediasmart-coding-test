@@ -4,6 +4,7 @@ import Members from '../components/Members';
 import Nav from '../components/Nav';
 import Profile from '../components/Profile';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 class App extends Component{
 
@@ -64,6 +65,7 @@ class App extends Component{
   render () {
     return(
       <div className="container" id="container">
+        
         <Profile 
           profile={this.state.profile}
           profile_show={this.state.profile_show}
@@ -95,6 +97,8 @@ class App extends Component{
           handleClickForward={this.handleClickForward}
           handleClickBack={this.handleClickBack}
         />
+
+        <Footer/>
 
       </div> // container
     )
