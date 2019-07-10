@@ -16,7 +16,7 @@ class Nav extends Component {
     }
 
     return (
-      <div className="row" id="nav">
+      <div className="row nav-layout">
 
         <div className="col-md-2">
           {button}

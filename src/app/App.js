@@ -24,6 +24,7 @@ class App extends Component{
   }
 
   componentDidMount() {
+    
     this.fetchMembers(this.state.page, this.state.page_size);
   }
 
@@ -64,7 +65,7 @@ class App extends Component{
 
   render () {
     return(
-      <div className="container" id="container">
+      <div className="container">
         
         <Profile 
           profile={this.state.profile}
@@ -72,7 +73,7 @@ class App extends Component{
           hideProfile={this.hideProfile}
         />
 
-        <div id="dark" 
+        <div className="dark-layout" 
           hidden={!this.state.profile_show} 
           onClick={this.hideProfile}>
         </div>

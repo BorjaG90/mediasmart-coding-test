@@ -8,21 +8,18 @@ class Footer extends Component {
           Prueba de código para <a href="http://www.mediasmart.io">MediaSmart</a>
         </div>
         <div className="col-md-5 text-center">
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://www.linkedin.com/in/borjag90/">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/BorjaG90">
-              <i class="fab fa-github-square"></i>
-            </a>
-          </li>
-        </ul>
+        
+          <a className="foot-ico" href="https://www.linkedin.com/in/borjag90/">
+            <i className="fab fa-linkedin"></i>
+          </a>
+        
+          <a className="foot-ico" href="https://github.com/BorjaG90">
+            <i className="fab fa-github-square"></i>
+          </a>
+          
         </div>
       </div>
-      <div class="footer-copyright text-center py-3">© 2019:
+      <div className="footer-copyright text-center py-3">© 2019:
         <a href="https://github.com/BorjaG90"> BorjaG90</a>
       </div>
     </footer>
