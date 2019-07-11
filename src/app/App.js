@@ -5,6 +5,8 @@ import Nav from '../components/Nav';
 import Profile from '../components/Profile';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Spinner from '../components/Spinner';
+import Pulse from '../components/Pulse';
 
 class App extends Component{
 
@@ -15,7 +17,10 @@ class App extends Component{
       page: 0,
       page_size: 9,
       profile: {},
-      profile_show: false
+      profile_show: false,
+      loading: false,
+      loading_pulse: false
+
     };
     this.handleClickForward = this.handleClickForward.bind(this);
     this.handleClickBack = this.handleClickBack.bind(this);
@@ -24,7 +29,7 @@ class App extends Component{
   }
 
   componentDidMount() {
-    
+    this.setState({loading: true});
     this.fetchMembers(this.state.page, this.state.page_size);
   }
 
@@ -34,17 +39,22 @@ class App extends Component{
       .then(data => {
         this.setState({
           members: data,
-          page
+          page,
+          loading: false,
+          loading_pulse: false
         });
       });
   }
 
   // Nav
   handleClickBack() {
+    this.setState({loading_pulse: true});
     this.fetchMembers(this.state.page - 1, this.state.page_size);
   }
 
   handleClickForward() {
+    
+    this.setState({loading_pulse: true});
     this.fetchMembers(this.state.page +1, this.state.page_size);
   }
 
@@ -85,6 +95,9 @@ class App extends Component{
           handleClickForward={this.handleClickForward}
           handleClickBack={this.handleClickBack}
         />
+
+        <Pulse loading={this.state.loading_pulse}/>
+        <Spinner loading={this.state.loading}/>
         
         <div className="row">
           <Members 

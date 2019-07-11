@@ -1,15 +1,18 @@
 # mediasmart-coding-test
 
 ![](https://img.shields.io/badge/Maintained-Yes-green.svg)
-![](https://img.shields.io/badge/Status-In_Progress-blue.svg)
+![](https://img.shields.io/badge/Status-Close-green.svg)
 
 A simple webapp to review members.
-
-## Features
 
 ## Installing
 ```
 npm install
+```
+
+## Usage
+```
+npm start
 ```
 
 ## Built With
