@@ -1,0 +1,185 @@
+.navbar {
+  text-align: center;
+}
+
+h1 {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h1, h2, h3 {
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-left: auto;
+}
+
+
+.logo-img {
+  height: 8.8rem;
+  margin: 0;
+}
+
+.card {
+  margin: 2%;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.photo-img {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+.profile {
+  width: 98%;
+  background-color: whitesmoke;
+  position: absolute;
+  z-index: 3;
+  margin: 10%;
+  padding: inherit;
+  left: -9%;
+  border-radius: 5px;
+  padding: 2%;
+  animation-name: showProfile;
+  animation-duration: 0.5s;
+}
+
+/*.profile-data {
+  animation-name: moveProfile;
+  animation-duration: 1s;
+}
+
+.profile-photo {
+  animation-name: moveData;
+  animation-duration: 1s;
+}*/
+
+.profile-data h2 {
+  font-size: 22px;
+  background-color: crimson;
+  padding: 1rem;
+  text-align: center;
+}
+
+.profile-data h3 {
+  font-size: 18px;
+  text-align: right;
+  padding: 0.5rem 1rem;
+  background-color: black;
+}
+
+.profile-photo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.profile-bio {
+  border-radius: 5px;
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 15px;
+}
+
+.profile-bio textarea {
+  width: 100%;
+}
+
+.profile-close {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+
+.dark-layout {
+  height: 150%;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  z-index: 2;
+  width: 150%;
+  left: 0;
+}
+
+.nav-layout {
+  margin: 2%;
+}
+
+.nav-actualpage{
+  font-weight: 500;
+  font-style: italic;
+}
+
+.member-card {
+  position: relative;
+}
+
+.member-data {
+  position: absolute;
+  z-index: 1;
+  width: 90%;
+  bottom: 1%;
+  right: 1%;
+  display: none;
+}
+
+.member-name {
+  background-color: whitesmoke;
+}
+
+.member-age {
+  background-color: crimson;
+}
+
+.member-name, .member-age {
+  font-weight: bold;
+  font-style: italic;
+  border-radius: 5px;
+}
+
+div.member-card:hover div.member-data {
+  display: block;
+  animation-name: moveData;
+  animation-duration: 1s;
+}
+
+.page-footer {
+  color: azure;
+}
+
+.foot-ico {
+  margin-right: 5%;
+}
+
+@media (min-width: 768px) {
+  .profile-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    margin: none;
+  }
+}
+
+@keyframes moveData {
+  0%   {right:25%; opacity: 0.5;}
+  100%  {right:0%; opacity: 1.0;}
+}
+
+@keyframes moveProfileData {
+  0%   {left:25%; opacity: 0.5;}
+  100%  {left:0%; opacity: 1.0;}
+}
+
+@keyframes showProfile {
+  0%   {opacity: 0.0;}
+  100%  {opacity: 1.0;}
+}
