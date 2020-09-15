@@ -1,7 +1,14 @@
 # mediasmart-coding-test
 
-![](https://img.shields.io/badge/Maintained-Yes-green.svg)
-![](https://img.shields.io/badge/Status-Close-green.svg)
+![Work](https://img.shields.io/badge/Project-Work-red.svg)
+![](https://img.shields.io/badge/Status-Finished-blue.svg)
+![](https://img.shields.io/badge/Maintained-No-red.svg)
+
+<a href="https://github.com/BorjaG90/mediasmart-coding-test" alt="MediaSmart Coding Test">
+<img alt="github repo" src="https://img.shields.io/badge/github-repo-black?logo=github"/></a>
+
+<a href="https://developer.mozilla.org/es/docs/Web/JavaScript" alt="JavaScript Documentation">
+<img alt="Javascript Documentation" src="https://img.shields.io/badge/Made_with-JavaScript-yellow"/></a>
 
 A simple webapp to review members.
 
@@ -32,4 +39,6 @@ npm start
 <a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/BorjaG90/media/master/img/logos/vscode.png" width=50 alt="VSCode"></a>
 
 ## Author
-* **Borja Gete** - <borjagete90@outlook.es>
+* **Borja Gete**
+
+<a href="mailto:borjag90dev@gmail.com" alt="Borja Gete mail"><img src="https://img.shields.io/badge/BorjaG90-DDDDDD?style=for-the-badge&logo=gmail" title="Go To mail" alt="Borja Gete mail"/></a> <a href="https://github.com/BorjaG90" alt="Borja Gete Github"><img src="https://img.shields.io/badge/BorjaG90-black?style=for-the-badge&logo=github" title="Go To Github Profile" alt="Borja Gete Github"/></a> <a href="https://linkedin.com/borjag90" alt="Borja Gete LinkedIn"><img src="https://img.shields.io/badge/BorjaG90-blue?style=for-the-badge&logo=linkedin" title="Go To LinkedIn Profile" alt="Borja Gete LinkedIn"/></a>
